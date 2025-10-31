@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>StyleMart</title>
+    <link rel="stylesheet" href="home.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>   
+<style>
+/* 💻 Medium screens (<= 992px) */
+/* 💻 Medium screens (<= 992px) */
+@media screen and (max-width: 992px) {
+  
+  #wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .footer-col {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* evenly distribute columns */
+  }
+
+  .footer-col h4 {
+    text-align: left;
+  }
+
+}
+
+/* 📱 Tablets & small devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .carsoul img,
+  .carousel-inner .carousel-item img {
+    height: 260px;
+    object-fit: cover;
+  }
+  /* Products */
+  main .query{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 40px;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: center;
+  }
+
+  .column {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 90% !important;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #wrapper h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  #wrapper h3 {
+    font-size: 16px;
+  }
+
+  /* Testimonials */
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Brands section */
+  .brands{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .brands img {
+    width: 120px;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <section id="wrapper">
+      <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-color rounded shadow" style="max-width:1000px; margin-bottom:2px;">
+    <img src="images/logo.jpg" alt="Logo" style="height:40px; padding-right:10px; padding-left:5px">
+        <h4 style="color:white; padding-top:10px;">StyleMate</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="men.html">Mens</a></li>
+        <li class="nav-item"><a class="nav-link" href="women.html">Womens</a></li>
+        <li class="nav-item"><a class="nav-link" href="kid.html">Kids</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <main>
+        <div class="carsoul">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                             <div class="carousel-item active">
+                                    <img src="images/carsoul1.jpg" height="500" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                     <img src="images/carsoul2.webp" height="500"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                    <img src="images/carsoul3.webp" height="500" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+        </div>
+            <h2>Our Featured Products</h2>
+            <div class="products">
+                <h3>Mens Section</h3>
+                <div class="row query">
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width:18rem;" >
+                                <img src="images/mens1.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Modern Garments Mens Kurta Dhoti Set with Designer Ethnic Nehru Jacket</p> 
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/men2.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Peter England Men's Satin Solid Regular Fit Shirt Cotton with Satin Sheen.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/men3.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Pinkmint Casual Shirt for Men Stylish Men's Shirt Soild Regular Fit.</p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                <h3>Womens Section</h3>
+                <div class="row query">
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/women1.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Amayra Women's Pure Cotton Printed Straight Kurta Set with Palazzo.<p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/women2.jpg" width="80" height="412" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">SATIKA RITI Women's Paithani Kanjivaram Pure Silk Handloom Saree.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/women3.jpg" width="80" height="410" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">GRECIILOOKS Women Poly Lycra Standard Length Oversized Jacket Korean.</p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                <h3>Kids Section</h3>
+                <div class="row query">
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/kid1.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Zikigo Boy's Cotton Lycra Blend Round Neck T-shirt and Full-Sleeved Army.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/kid2.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">superminis Girls Cotton Floral Printed Gotta Work 3/4 Sleeves Sharara.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class="card card1" style="width: 17.5rem;">
+                                <img src="images/kid3.jpg" width="80" height="400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Girls Poly Silk Floral Printed 3/4 Sleeve Sharara Set Ethnic Wear and sharara</p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <h2>Testimonals</h2>
+            <div class="row query">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 17.5rem;">
+                            <!-- <img src="" class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                <p class="card-text text">"I purchased a formal shirt and trousers set from this store for an office event, and I must say I was thoroughly impressed. The fabric feels premium, and the fit was just perfect without needing any alterations. What I loved most is how comfortable it was even after wearing it for an entire day.The stitching is neat and the design is modern yet classy."</p>
+                                <p class="text"><b>— Ravi K., Pune</b></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 17.5rem;">
+                                <div class="card-body">
+                                <p class="card-text text">"I recently bought an ethnic dress from this website for a family function, and I absolutely loved it. The colors were vibrant, exactly as shown on the website, and the embroidery work was beautiful. The dress fit me perfectly and made me feel confident and stylish. What impressed me most was the quality of the fabric—it was lightweight yet elegant."</p>
+                                <p class="text"><b>— Megha S., Bengaluru</b></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 17.5rem;">
+                                <div class="card-body">
+                                <p class="card-text text">"I ordered a party wear dress for my daughter and it was just perfect! The fabric was soft and gentle on her skin, and the design was so cute that she didn’t want to take it off. The stitching was strong, and the dress looked even better in real life than in the photos online. It made her really happy and comfortable during the family function."</p>
+                                <p class="text"><b>— Arjun P., Hyderabad</b></p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+            <h2>Our Brands</h2>
+            <div class="brands">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/brand1.webp">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand2.png" width="200" height="200">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand3.png" width="200" height="200">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand4.png" width="200" height="200">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/brand5.png" width="200" height="200">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand6.webp" width="200" height="150">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand7.jpg" width="200" height="150">
+                </div>
+                <div class="col-md-3">
+                    <img src="images/brand8.webp" width="200" height="200">
+                </div>
+            </div>
+            </div>
+        </main>
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="men.html">Mens</a></li>
+  	 				<li><a href="women.html">Womens</a></li>
+  	 				<li><a href="kid.html">Kids</a></li>
+  	 				<li><a href="index.html">Dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="bi bi-instagram"></i></a>
+  	 				<a href="#"><i class="bi bi-facebook"></i></a>
+  	 				<a href="#"><i class="bi bi-twitter"></i></a>
+  	 				<a href="#"><i class="bi bi-linkedin"></i></a>
+            <p style="color:white;">All rights reserved &copy; Stylemate 2025</p>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    </section>
+</body>
+</html>
