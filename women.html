@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+<style>
+/* 💻 Medium screens (<= 992px) — show 2 cards per row */
+@media screen and (max-width: 992px) {
+  .page-women .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .page-women .product-card {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+
+
+
+/* womens */
+/* 📱 Small screens (<= 768px) — show 1 card per row */
+@media screen and (max-width: 768px) {
+  .page-women .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .page-women .product-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .page-women .product-card img {
+    height: 250px;
+  }
+
+  .page-women .product-card h2 {
+    font-size: 16px;
+  }
+
+  .page-women .product-card p {
+    font-size: 13px;
+  }
+}
+
+/* ✅ Keep same responsiveness for header & footer */
+@media screen and (max-width: 992px) {
+  #wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .footer-col {
+    width: 25%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-col h4 {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carsoul img,
+  .carousel-inner .carousel-item img {
+    height: 260px;
+    object-fit: cover;
+  }
+}
+</style>
+
+</head>
+
+<body class="page-women">
+  <div id="wrapper">
+   <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-color rounded shadow" style="max-width:1000px; margin-bottom:2px;">
+    <img src="images/logo.jpg" alt="Logo" style="height:40px; padding-right:10px; padding-left:5px">
+        <h4 style="color:white; padding-top:10px;">StyleMate</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="men.html">Mens</a></li>
+        <li class="nav-item"><a class="nav-link" href="women.html">Womens</a></li>
+        <li class="nav-item"><a class="nav-link" href="kid.html">Kids</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <!-- Carousel -->
+    <div class="carsoul">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.manyavar.com/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dw0ecd2c4f/wedding%20blogs/Exploring%20All%20Kinds%20of%20Indian%20Menswear_D%20copy.jpg" class="d-block w-100" alt="Menswear">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.westside.com/cdn/shop/articles/Indian_wear_for_women.jpg?v=1666333509" class="d-block w-100" alt="Women Wear">
+          </div>
+          <div class="carousel-item">
+            <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2023/07/best-kids-clothing-stores-online-zara.jpg" class="d-block w-100" alt="Kids Fashion">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <h2>Women's Wear Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81IQzobx04L._SY741_.jpg" alt="">
+        <h2>Amayra Cotton Kurta Set</h2>
+        <p>Pure Cotton Printed Straight Kurta Set with Palazzo & Dupatta</p>
+        <p class="price">₹659</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71oRcQRDD6L._SX569_.jpg" alt="">
+        <h2>SATIKA RITI Saree</h2>
+        <p>Women's Paithani Kanjivaram Pure Silk Handloom Saree</p>
+        <p class="price">₹659</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61eVV+8jDyL._SY741_.jpg" alt="">
+        <h2>GRECIILOOKS Jacket</h2>
+        <p>Poly Lycra Oversized Jacket, Korean Style Casual Outerwear</p>
+        <p class="price">₹659</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress1.png" alt="">
+        <h2>KLOSIA Anarkali Set</h2>
+        <p>Viscose Floral Printed Anarkali Kurta Pant Dupatta Set</p>
+        <p class="price">₹659</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress2.png" alt="">
+        <h2>Rangita Mirror Work</h2>
+        <p>Ethnic Motifs Printed Kurta With Trousers & Dupatta</p>
+        <p class="price">₹799</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress3.png" alt="">
+        <h2>Janasya Poly Crepe</h2>
+        <p>Straight Kurta with Palazzo & Dupatta</p>
+        <p class="price">₹999</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress4.png" alt="">
+        <h2>Indo Era Kurta Set</h2>
+        <p>Red Ethnic Motifs Cotton Kurta with Palazzos & Dupatta</p>
+        <p class="price">₹899</p>
+        <a href="cart.html"><button>Add to Cart</button></a>
+      </div>
+
+
+   
+    
+
+  </div>
+
+
+
+     <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="men.html">Mens</a></li>
+  	 				<li><a href="women.html">Womens</a></li>
+  	 				<li><a href="kid.html">Kids</a></li>
+  	 				<li><a href="index.html">Dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="bi bi-instagram"></i></a>
+  	 				<a href="#"><i class="bi bi-facebook"></i></a>
+  	 				<a href="#"><i class="bi bi-twitter"></i></a>
+  	 				<a href="#"><i class="bi bi-linkedin"></i></a>
+            <p style="color:white;">All rights reserved &copy; Stylemate 2025</p>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+  </div>
+</body>
+</html>
