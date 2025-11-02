@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleMate - Kids Wear</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+/* 💻 Medium screens (<= 992px) */
+@media screen and (max-width: 992px) {
+  
+  #wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .footer-col {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* evenly distribute columns */
+  }
+
+  .footer-col h4 {
+    text-align: left;
+  }
+
+}
+
+/* 📱 Tablets & small devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .carsoul img,
+  .carousel-inner .carousel-item img {
+    height: 260px;
+    object-fit: cover;
+  }
+  /* Products */
+  main .query{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 40px;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: center;
+  }
+
+  .column {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 90% !important;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #wrapper h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  #wrapper h3 {
+    font-size: 16px;
+  }
+
+  /* Testimonials */
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Brands section */
+  .brands{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .brands img {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Footer */
+}
+</style>
+</head>
+<body class="page-kids">
+  <section id="wrapper">
+    <header> 
+       <nav class="navbar navbar-expand-md navbar-light bg-color rounded shadow" style="max-width:1000px; margin-bottom:2px;"> 
+     <img src="images/logo.jpg" alt="Logo" style="height:40px; padding-right:10px; padding-left:5px"> 
+         <h4 style="color:white;">StyleMate</h4> 
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" 
+       aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"> 
+       <span class="navbar-toggler-icon"></span> 
+     </button> 
+     <div class="collapse navbar-collapse" id="mainNavbar"> 
+       <ul class="navbar-nav ms-auto mb-2 mb-md-0"> 
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="mens.html">Mens</a></li>
+        <li class="nav-item"><a class="nav-link" href="women.html">Womens</a></li>
+        <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+       </ul> 
+     </div> 
+   </nav> 
+ </header>
+    <main>
+      <div class="carsoul">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carsoul1.jpg" height="500" class="d-block w-100" alt="Kids banner 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carsoul2.jpg" height="500" class="d-block w-100" alt="Kids banner 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carsoul3.jpg" height="500" class="d-block w-100" alt="Kids banner 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h2>Kids Wear Collection</h2>
+      <p style="text-align: center; margin: 10px 0; color: #666;">Colorful and comfortable shirts & trousers for kids</p>
+
+      <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/kids1.jpg" alt="Kids Cartoon Shirt" />
+      <h2>Cartoon Print Shirt</h2>
+      <p class="price">₹899</p>
+      <p>Cotton shirt with fun cartoon graphics.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids2.jpg" alt="Floral Shirt" />
+      <h2>Floral Shirt</h2>
+      <p class="price">₹999</p>
+      <p>Lightweight and breathable fabric with floral design.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids3.jpg" alt="Striped Shirt" />
+      <h2>Striped Shirt</h2>
+      <p class="price">₹799</p>
+      <p>Stylish stripes for a trendy look.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids4.jpg" alt="Denim Shirt" />
+      <h2>Kids Denim Shirt</h2>
+      <p class="price">₹1,099</p>
+      <p>Mini-me denim for fun outings.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids5.jpg" alt="Formal Shirt" />
+      <h2>Formal Shirt</h2>
+      <p class="price">₹1,199</p>
+      <p>Perfect for parties and special occasions.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images/kids6.jpg" alt="Jogger Pants" />
+      <h2>Jogger Pants</h2>
+      <p class="price">₹899</p>
+      <p>Stretchable and comfy joggers for playtime.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids7.jpg" alt="Cotton Trousers" />
+      <h2>Cotton Trousers</h2>
+      <p class="price">₹999</p>
+      <p>Soft trousers ideal for school or daily wear.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids8.jpg" alt="Denim Jeans" />
+      <h2>Denim Jeans</h2>
+      <p class="price">₹1,199</p>
+      <p>Rugged and stylish jeans for all-day comfort.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids9.jpg" alt="Printed Trousers" />
+      <h2>Printed Trousers</h2>
+      <p class="price">₹899</p>
+      <p>Colorful patterns with soft waistbands.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kids10.jpg" alt="Formal Pants" />
+      <h2>Formal Pants</h2>
+      <p class="price">₹1,099</p>
+      <p>Sleek and elegant design for ceremonies.</p>
+      <a href="cart.html"><button>Add to Cart</button></a>
+    </div>
+      </div>
+    </main>
+    <footer class="footer">
+   	  <div class="container"> 
+   	  	 <div class="row"> 
+   	  	 	 <div class="footer-col"> 
+   	  	 	 	 <h4>company</h4> 
+   	  	 	 	 <ul> 
+   	  	 	 	 	 <li><a href="#">about us</a></li> 
+   	  	 	 	 	 <li><a href="#">our services</a></li> 
+   	  	 	 	 	 <li><a href="#">privacy policy</a></li> 
+   	  	 	 	 	 <li><a href="#">affiliate program</a></li> 
+   	  	 	 	 </ul> 
+   	  	 	 </div> 
+   	  	 	 <div class="footer-col"> 
+   	  	 	 	 <h4>get help</h4> 
+   	  	 	 	 <ul> 
+   	  	 	 	 	 <li><a href="#">FAQ</a></li> 
+   	  	 	 	 	 <li><a href="#">shipping</a></li> 
+   	  	 	 	 	 <li><a href="#">returns</a></li> 
+   	  	 	 	 	 <li><a href="#">order status</a></li> 
+   	  	 	 	 	 <li><a href="#">payment options</a></li> 
+   	  	 	 	 </ul> 
+   	  	 	 </div> 
+   	  	 	 <div class="footer-col"> 
+   	  	 	 	 <h4>online shop</h4> 
+   	  	 	 	 <ul> 
+   					<li><a href="mens.html">Mens</a></li>
+  	 				<li><a href="women.html">Womens</a></li>
+   					<li><a href="kids.html">Kids</a></li>
+  	 				<li><a href="index.html">Dress</a></li>
+   	  	 	 	 </ul> 
+   	  	 	 </div> 
+   	  	 	 <div class="footer-col"> 
+   	  	 	 	 <h4>follow us</h4> 
+   	  	 	 	 <div class="social-links"> 
+   	  	 	 	 	 <a href="#"><i class="bi bi-instagram"></i></a> 
+   	  	 	 	 	 <a href="#"><i class="bi bi-facebook"></i></a> 
+   	  	 	 	 	 <a href="#"><i class="bi bi-twitter"></i></a> 
+   	  	 	 	 	 <a href="#"><i class="bi bi-linkedin"></i></a> 
+             <p style="color:white;">All rights reserved &copy; Stylemate 2025</p> 
+   	  	 	 	 </div> 
+   	  	 	 </div> 
+   	  	 </div> 
+   	  </div> 
+   </footer>
+  </section>
+</body>
+</html>
