@@ -500,6 +500,8 @@ h3{
   background-color: grey;
   position: relative;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -572,7 +574,7 @@ textarea.input {
 }
 .btn {
     background: linear-gradient(135deg, white, white);
-    color: white;
+    color:black;
     border: none;
     border-radius: 25px;
     padding: 0.7rem 1.5rem;
@@ -593,21 +595,52 @@ textarea.input {
   /* Login container */
  
   .login-container {
-    max-width: 400px;
-    margin: 100px auto 80px; /* bottom margin added to separate from footer */
-    padding: 25px;
-    background: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(5px);
-    margin-bottom: 50px;
-  }
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
   
 body.login-page {
   position: relative;
   background-color: #f0f0f0; /* fallback */
   min-height: 100vh;
   overflow: hidden; /* Prevent scrollbars caused by the pseudo-element */
+}
+/* Background only for login area */
+.background-area {
+  background-image: url("https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  display: flex;
+justify-content: center;
+}
+
+/* Add a transparent overlay (optional for better readability) */
+.background-area::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.background-area > .login-container {
+  position: relative;
+  z-index: 2; /* so form stays above overlay */
+}
+
+/* To avoid background leaking behind header/footer */
+main {
+  position: relative;
+  z-index: 0;
 }
 
 
@@ -626,7 +659,6 @@ body.login-page::before {
   filter: blur(2px); /* this applies the blur */
   z-index: -1; /* keep it behind everything */
 }
-
 
 
 /* media query for the footer */

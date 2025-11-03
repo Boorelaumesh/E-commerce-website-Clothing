@@ -1,165 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StyleMart - Contact Us</title>
-  <link rel="stylesheet" href="home.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>StyleMart</title>
+    <link rel="stylesheet" href="home.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+main {
+  background-image: url('https://img.pikbest.com/ai/illus_our/20230413/6ae0a62b019b4dab1dd066866b985365.jpg!w700wp');
+  background-size: cover;         
+  background-repeat: no-repeat;    
+  background-position: center;     
+  padding: 40px 0;                
+  border-radius: 10px;            
+}
+
+/* 💻 Medium screens (<= 992px) */
+@media screen and (max-width: 992px) {
+  
+  #wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .footer-col {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* evenly distribute columns */
+  }
+
+  .footer-col h4 {
+    text-align: left;
+  }
+
+}
+
+
+</style>
 </head>
-<body class="login-page">
+<body>
     <section id="wrapper">
-        <!-- Header -->
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-color rounded shadow" style="max-width:1000px; margin-bottom:2px;">
-          <img src="images/logo.jpg" alt="Logo" style="height:40px; padding-right:10px; padding-left:5px">
-              <h4 style="color:white;">StyleMate</h4>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="mens.html">Mens</a></li>
-              <li class="nav-item"><a class="nav-link" href="women.html">Womens</a></li>
-              <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
-              <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-            </ul>
+      <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-color rounded shadow" style="max-width:1000px; margin-bottom:2px;">
+    <img src="images/logo.jpg" alt="Logo" style="height:40px; padding-right:10px; padding-left:5px">
+        <h4 style="color:white; padding-top:10px;">StyleMate</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="mens.html">Mens</a></li>
+        <li class="nav-item"><a class="nav-link" href="women.html">Womens</a></li>
+        <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <main>
+      <div class="container" style="padding-top:30px;">
+        <div class="form">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">We'd love to hear from you! Reach out via phone, email, or visit us.</p>
+                <div class="info">
+                    <div class="information">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <p>Plot No. B27, Sector 44F<br>Gurugram, Haryana 122003<br>India</p>
+                    </div>
+                    <div class="information">
+                        <i class="fas fa-envelope icon"></i>
+                        <p>stylemart@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <p>+91 123-456-7890</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Connect with us</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" autocomplete="off">
+                    <h3 class="title">Contact Us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label>Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label>Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required />
+                        <label>Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label>Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+      
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="men.html">Mens</a></li>
+            <li><a href="women.html">Womens</a></li>
+            <li><a href="kid.html">Kids</a></li>
+            <li><a href="index.html">Dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <p style="color:white;">All rights reserved &copy; Stylemate 2025</p>
           </div>
-        </nav>
-      </header>
-        <!-- Contact Content -->
-        <main>
-            <div class="container" style="padding-top:30px;">
-                <div class="form">
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <h3 class="title">Let's get in touch</h3>
-                        <p class="text">We'd love to hear from you! Reach out via phone, email, or visit us.</p>
-                        <div class="info">
-                            <div class="information">
-                                <i class="fas fa-map-marker-alt icon"></i>
-                                <p>Plot No. B27, Sector 44F<br>Gurugram, Haryana 122003<br>India</p>
-                            </div>
-                            <div class="information">
-                                <i class="fas fa-envelope icon"></i>
-                                <p>stylemart@gmail.com</p>
-                            </div>
-                            <div class="information">
-                                <i class="fas fa-phone-alt icon"></i>
-                                <p>+91 123-456-7890</p>
-                            </div>
-                        </div>
-                        <div class="social-media">
-                            <p>Connect with us</p>
-                            <div class="social-icons">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact Form -->
-                    <div class="contact-form">
-                        <form action="#" autocomplete="off">
-                            <h3 class="title">Contact Us</h3>
-                            <div class="input-container">
-                                <input type="text" name="name" class="input" required />
-                                <label>Username</label>
-                                <span>Username</span>
-                            </div>
-                            <div class="input-container">
-                                <input type="email" name="email" class="input" required />
-                                <label>Email</label>
-                                <span>Email</span>
-                            </div>
-                            <div class="input-container">
-                                <input type="tel" name="phone" class="input" required />
-                                <label>Phone</label>
-                                <span>Phone</span>
-                            </div>
-                            <div class="input-container textarea">
-                                <textarea name="message" class="input" required></textarea>
-                                <label>Message</label>
-                                <span>Message</span>
-                            </div>
-                            <input type="submit" value="Send" class="btn" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="footer-col">
-                  <h4>company</h4>
-                  <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">affiliate program</a></li>
-                  </ul>
-                </div>
-                <div class="footer-col">
-                  <h4>get help</h4>
-                  <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping</a></li>
-                    <li><a href="#">returns</a></li>
-                    <li><a href="#">order status</a></li>
-                    <li><a href="#">payment options</a></li>
-                  </ul>
-                </div>
-                <div class="footer-col">
-                  <h4>online shop</h4>
-                  <ul>
-                    <li><a href="men.html">Mens</a></li>
-                    <li><a href="women.html">Womens</a></li>
-                    <li><a href="kid.html">Kids</a></li>
-                    <li><a href="index.html">Dress</a></li>
-                  </ul>
-                </div>
-                <div class="footer-col">
-                  <h4>follow us</h4>
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                   <p style="color:white;">All rights reserved &copy; Stylemate 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </footer>
+        </div>
+      </div>
+     </div>
+  </footer>
     </section>
     <script>
-        // Input focus/blur effect for floating labels
-        const inputs = document.querySelectorAll(".input");
-        function focusFunc() {
-          let parent = this.parentNode;
-          parent.classList.add("focus");
+      // Input focus/blur effect for floating labels
+      const inputs = document.querySelectorAll(".input");
+      function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+      }
+      function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value.trim() === "") {
+          parent.classList.remove("focus");
         }
-        function blurFunc() {
-          let parent = this.parentNode;
-          if (this.value.trim() === "") {
-            parent.classList.remove("focus");
-          }
-        }
-        inputs.forEach((input) => {
-          input.addEventListener("focus", focusFunc);
-          input.addEventListener("blur", blurFunc);
-        });
-    </script>
+      }
+      inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+      });
+  </script>
 </body>
 </html>
